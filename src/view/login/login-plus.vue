@@ -58,11 +58,9 @@ export default {
             isLogin = true;
           }
           loginMessage = response.data.message;
-          console.log('i am responese');
           console.log(response.data);
         })
         .catch(function (error) {
-          console.log('i am error');
           console.log(error);
           });
           if(isLogin){

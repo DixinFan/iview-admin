@@ -98,7 +98,8 @@ export default [
           icon: 'md-cloud-upload',
           title: 'QQ群'
         },
-        component: () => import('@/view/upload-video-page.vue')
+        // component: () => import('@/view/upload-video-page.vue')
+        component: () => import('@/view/upload-video')
       }
     ]
   },
