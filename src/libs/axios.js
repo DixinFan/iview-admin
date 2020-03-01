@@ -9,7 +9,7 @@ const addErrorLog = errorInfo => {
     mes: statusText,
     url: responseURL
   }
-  if (!responseURL.includes('save_error_logger')) store.dispatch('addErrorLog', info)
+  if (!responseURL.includes('save_https://github.com/DixinFan/front-template.giterror_logger')) store.dispatch('addErrorLog', info)
 }
 
 class HttpRequest {

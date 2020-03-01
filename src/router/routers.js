@@ -25,7 +25,8 @@ export default [
       title: 'Login - 登录',
       hideInMenu: true
     },
-    component: () => import('@/view/login/login.vue')
+    // component: () => import('@/view/login/login.vue')
+    component: () => import('@/view/login/login-plus.vue')
   },
   {
     path: '/',
@@ -46,10 +47,33 @@ export default [
           notCache: true,
           icon: 'md-home'
         },
-        component: () => import('@/view/single-page/home')
+        component: () => import('@/view/home')
       }
     ]
   },
+  // {
+  //   path: '/',
+  //   name: '_home',
+  //   redirect: '/home',
+  //   component: Main,
+  //   meta: {
+  //     hideInMenu: true,
+  //     notCache: true
+  //   },
+  //   children: [
+  //     {
+  //       path: '/home',
+  //       name: 'home',
+  //       meta: {
+  //         hideInMenu: true,
+  //         title: '首页',
+  //         notCache: true,
+  //         icon: 'md-home'
+  //       },
+  //       component: () => import('@/view/single-page/home')
+  //     }
+  //   ]
+  // },
   // {
   //   path: '',
   //   name: 'doc',
