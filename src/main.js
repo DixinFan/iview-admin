@@ -16,6 +16,13 @@ import TreeTable from 'tree-table-vue'
 import VOrgTree from 'v-org-tree'
 import 'v-org-tree/dist/v-org-tree.css'
 import VueResource from 'vue-resource'
+import Video from 'video.js'
+import 'video.js/dist/video-js.css'
+import VideoPlayer from 'vue-video-player'
+require('video.js/dist/video-js.css')
+require('vue-video-player/src/custom-theme.css')
+Vue.use(VideoPlayer)
+Vue.prototype.$video = Video
 Vue.use(VueResource)
 // 实际打包时应该不引入mock
 /* eslint-disable */

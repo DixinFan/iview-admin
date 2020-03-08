@@ -51,6 +51,44 @@ export default [
       }
     ]
   },
+  {
+    path: '/upload',
+    name: 'upload',
+    component: Main,
+    meta: {
+      hideInBread: true
+    },
+    children: [
+      {
+        path: 'upload_page',
+        name: '视频上传',
+        meta: {
+          icon: 'md-cloud-upload',
+          title: 'QQ群'
+        },
+        component: () => import('@/view/upload-video/upload-index.vue')
+      }
+    ]
+  },
+  {
+    path: '/play',
+    name: 'play',
+    component: Main,
+    meta: {
+      hideInBread: true
+    },
+    children: [
+      {
+        path: 'play_page',
+        name: '上传视频播放',
+        meta: {
+          icon: 'md-play',
+          title: 'QQ群'
+        },
+        component: () => import('@/view/play-video/v-for.vue')
+      }
+    ]
+  },
   // {
   //   path: '/',
   //   name: '_home',
@@ -83,26 +121,6 @@ export default [
   //     icon: 'ios-book'
   //   }
   // },
-  {
-    path: '/join',
-    name: 'join',
-    component: Main,
-    meta: {
-      hideInBread: true
-    },
-    children: [
-      {
-        path: 'join_page',
-        name: 'join_page',
-        meta: {
-          icon: 'md-cloud-upload',
-          title: 'QQ群'
-        },
-        // component: () => import('@/view/upload-video-page.vue')
-        component: () => import('@/view/upload-video')
-      }
-    ]
-  },
   // {
   //   path: '/message',
   //   name: 'message',
